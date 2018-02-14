@@ -1,0 +1,96 @@
+@import '../../common/stylus/mixin.styl'
+.goods
+	display flex
+	position absolute
+	width 100%
+	top 175px
+	bottom 46px
+	overflow hidden
+	.menu-wrapper
+		width 80px
+		background #f3f5f7
+		.menu-item
+			display table
+			width 56px
+			height 54px
+			line-height 14px
+			padding 0 12px
+			&.current
+				background white
+				margin-top -1px
+				.text
+					border-bottom none
+			.text
+				display table-cell
+				width 56px
+				vertical-align middle
+				font-size 12px
+				border-bottom 1px solid rgba(7,17,27,.1);
+				.icon
+					width 12px
+					height 12px
+					display inline-block
+					background-size 12px 12px
+					background-repeat no-repeat
+					margin-right 2px
+					&.decrease
+						bg-image('imgs/decrease_3');
+					&.discount
+						bg-image('imgs/discount_3');
+					&.special
+						bg-image('imgs/special_3');
+					&.invoice
+						bg-image('imgs/invoice_3');
+					&.guarantee
+						bg-image('imgs/guarantee_3');
+	.food-wrapper
+		flex 1
+		.food-list
+			.title
+				padding-left 14px
+				height 26px
+				line-height 26px
+				border-left 2px solid #d9dde1
+				font-size 12px
+				color #93999f
+				background #f3f5f7
+			.food-item
+				margin 20px
+				display flex
+				position relative
+				padding-bottom 18px
+				border-bottom 1px solid rgba(7,17,27,.1);
+				&:last-child
+					margin-bottom 0
+					border-bottom 0
+				.icon
+					width 57px
+					margin-right 10px
+				.content
+					font-size 14px
+					.name
+						margin-bottom 8px
+					.desc,.extra
+						font-size 10px
+						margin-bottom 8px
+						color #93999f
+					.count
+						margin-right 8px
+					.price
+						color #f01414
+						.old
+							color #93999f
+							font-size 10px
+							text-decoration line-through
+					.cart-control-wrapper
+						position absolute
+						right 0
+						bottom 10px
+
+				
+
+	.cart-bar-wrapper
+		position fixed
+		width 100%
+		height 46px
+		bottom 0

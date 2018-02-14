@@ -42,4 +42,6 @@ let app = new Vue({
   router
 }).$mount('#app');
 
+router.push('/goods');
+
 export default app;

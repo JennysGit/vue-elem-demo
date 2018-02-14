@@ -15,6 +15,7 @@
   "author": "Jenny",
   "license": "ISC",
   "dependencies": {
+    "better-scroll": "^1.8.1",
     "log4js": "^2.5.2",
     "stylus": "^0.54.5",
     "vue": "^2.5.13",

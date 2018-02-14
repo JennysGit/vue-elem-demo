@@ -1,0 +1,30 @@
+.cart-control
+	display flex
+	align-items center
+	.fade-enter-active, .fade-leave-active {
+		transition: all 0.4s linear;
+	}
+	.fade-enter, .fade-leave-active {
+		opacity: 0
+		transform: translate3d(24px, 0, 0);
+	}
+	.inner-enter-active, .inner-leave-active {
+		transition: all 0.4s linear
+		transform: rotate(0)
+	}
+	.inner-enter, .inner-leave-active {
+		opacity: 0
+		transform  rotate(180deg)
+	}
+	.cart-add, .cart-decrease
+		color #00a0dc
+		padding 5px
+	.cart-decrease
+		margin-top -2px
+	.iconfont
+		font-size 24px
+	.cart-count
+		padding-left 6px
+		padding-right 6px
+		font-size 10px
+		color #93999f
